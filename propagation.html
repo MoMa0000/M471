@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <!--Making site responsive-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+  <!-- "Topnav" Navbar -->
+  <script src="topnav.js"></script>
+  <nav class="topnav" id="myTopnav">
+    <!--Always put class="active" to the active part of the site-->
+    <a href="index.html">Kezdőlap</a>
+    <a href="témák.html" class="active">Témák</a>
+    <a href="#">Cikkek</a>
+    <a href="#">Link</a>
+    <!--Don't touch this-->
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i>Több</i>
+    </a>
+  </nav>
+
+  <header id="head" class="container">
+    <div class="centered, largetext">M471</div>
+  </header>
+
+  <!-- Main content -->
+  <main class="content">
+
+    <div>
+      <h1 style="text-align: center;"> Rádiós propagáció </h1>
+      <a href="https://www.hamqsl.com/solar.html" title="Click to add Solar-Terrestrial Data to your website!"><img
+          class="responsive" src="https://www.hamqsl.com/solar101vhfper.php"></a>
+
+      <h2> N0NBH &#8209; Adatok leolvasása </h2>
+      <p> A három fő adat amire mi kíváncsiak vagyunk az a <b>"SFI"</b> (Solar flux index), a <b>"K&#8209;Ind"</b>
+        (K-Index)
+        és az <b>"A&#8209;Ind"</b> (A&#8209;Index). Rövid hullámra legkönnyebben a "HF Conditions" cím alatt találhatjuk
+        meg az
+        értékeket egyes rádiós sávokra osztva (Day&#8209;Nappal, Night&#8209;Éjszaka &#8209; Good, Fair, Poor = Jó,
+        Középfok, Rossz). A
+        VHF&#8209;(144-146 MHz) sáv értékeit a "VHF Conditions" cím alatt találhatjuk meg, szintén olyan elven mint a
+        HF&#8209;nél.</p>
+      
+      <h2> SFI - Summarization of the Sun's Radiation Output </h2>
+      <ul>
+        <li>70 - Nem jó</li>
+        <li>80 - Jó</li>
+        <li>90 - Jobb</li>
+        <li>100+ - Legjobb</li>
+      </ul>
+
+      <h2> A-Index - Daily Average of Magnetic Activity </h2>
+      <ul>
+        <li>A = 0 - 7 Quiet</li>
+        <li>A = 8 - 15 Unsettled</li>
+        <li>A = 16 - 29 Active</li>
+        <li>A = 30 - 49 Minor storm</li>
+        <li>A = 50 - 99 Major storm</li>
+        <li>A = 100 - 400 Severe storm</li>
+      </ul>
+
+      <h2> K-Index - Updated every 3 Hours </h2>
+      <ul>
+        <li>K = 0 Inactive</li>
+        <li>K = 1 Very quiet</li>
+        <li>K = 2 Quiet</li>
+        <li>K = 3 Unsettled</li>
+        <li>K = 4 Active</li>
+        <li>K = 5 Minor storm</li>
+        <li>K = 6 Major storm</li>
+        <li>K = 7 Severe storm</li>
+        <li>K = 8 Very severe storm</li>
+        <li>K = 9 Extremely severe storm</li>
+      </ul>
+
+      <hr>
+
+    </div>
+
+  </main>
+
+</body>
+
+</html>
