@@ -6,6 +6,9 @@
 <!--Making site responsive-->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
+<header id="head" class="container" >
+<div class="centered, largetext">M471</div>
+</header>
 
 <body>
 
@@ -14,22 +17,20 @@
 <nav class="topnav" id="myTopnav">
   <!--Always put class="active" to the active part of the site-->
   <a href="index.html">Kezdőlap</a>
-  <a href="témák.html" class="active">Témák</a>
+  <a href="témák.html" class="active" style="font-weight: 1000;">Témák</a>
 
-  <button class="topnav" id="theme-toggle" aria-label="Toggle light and dark mode">
+  <!--Theme button!!!!-->
+  <a href="*" class="right" id="theme-toggle" aria-label="Toggle light and dark mode">
   Toggle Theme (beta)
-  </button>
+  </a>
   <script src="dark-light.js"></script>
-
+ <!--Theme button end-->
+  
   <!--Don't touch this-->
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i>Több</i>
   </a>
 </nav>
-
-<header id="head" class="container" >
-<div class="centered, largetext">M471</div>
-</header>
 
 <!-- Main content -->
 <main class="content">

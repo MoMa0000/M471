@@ -1,3 +1,15 @@
+/*colors:
+ #012727; darkcyan
+ #002F2F; darkercyan
+ #003E3E; mediumdarkcyan
+ #005D5D; mediumcyan
+ #007F7F; cyan 
+ background-color: #202020;
+ lighter dark: #333;
+ light bacground-color: whitesmoke;
+*/
+
+
 /* Set font */
 html {
   font-family: 'Courier New';
@@ -16,11 +28,23 @@ html {
 .topnav {
   overflow: hidden;
   background-color: #333;
+  position: sticky;
+  top: 0;
 }
 
 /* Style the navigation bar links */
 .topnav a{
   float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px 25px;
+  text-decoration: none;
+}
+
+/*float to the right*/
+.topnav a.right{
+  float: right;
   display: block;
   color: white;
   text-align: center;
@@ -36,7 +60,7 @@ html {
 
 /* Add an active class to highlight the current page */
 .topnav a.active {
-  background-color: darkcyan;
+  background-color: #007F7F;
   color: white;
 }
 
@@ -122,13 +146,13 @@ body {
 /* When the page has finished loading, JavaScript will add
    the .theme-transition class on <html> so subsequent theme changes animate. */
 html.theme-transition, html.theme-transition body {
-  transition: background-color 300ms ease, color 300ms ease;
+  transition: background-color 500ms ease, color 500ms ease;
 }
 
 /* Dark Mode */
 /* Dark Mode (applies when 'dark-mode' class is present on body/html) */
 body.dark-mode, html.dark-mode {
-  background-color: #333;
+  background-color: #202020;
   color: white;
 }
 
@@ -153,7 +177,7 @@ body.dark-mode, html.dark-mode {
   letter-spacing: 10px;
   bottom: 20px;
   right: 20px;
-  background-color: darkcyan;
+  background-color: #007F7F;
   color: white;
   padding-left: 20px;
   padding-right: 10px;
@@ -173,7 +197,7 @@ body.dark-mode, html.dark-mode {
   text-decoration: none;
   overflow: hidden;
   background-color: #333;
-  border: darkcyan;
+  border: #007F7F;
   border-style: solid;
 }
 

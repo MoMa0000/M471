@@ -2,34 +2,35 @@
 <html>
 
 <head>
-  <link rel="stylesheet" href="style.css">
-  <!--Making site responsive-->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<!--Making site responsive-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
+<header id="head" class="container" >
+<div class="centered, largetext">M471</div>
+</header>
 
 <body>
 
-  <!-- "Topnav" Navbar -->
-  <script src="topnav.js"></script>
-  <nav class="topnav" id="myTopnav">
-    <!--Always put class="active" to the active part of the site-->
-    <a href="index.html">Kezdőlap</a>
-    <a href="témák.html" class="active">Témák</a>
-    
-    <button class="topnav" id="theme-toggle" aria-label="Toggle light and dark mode">
-    Toggle Theme (beta)
-    </button>
-    <script src="dark-light.js"></script>
-    
-    <!--Don't touch this-->
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-      <i>Több</i>
-    </a>
-  </nav>
+<!-- "Topnav" Navbar -->
+<script src="topnav.js"></script> 
+<nav class="topnav" id="myTopnav">
+  <!--Always put class="active" to the active part of the site-->
+  <a href="index.html">Kezdőlap</a>
+  <a href="témák.html" class="active" style="font-weight: 1000;">Témák</a>
 
-  <header id="head" class="container">
-    <div class="centered, largetext">M471</div>
-  </header>
+  <!--Theme button!!!!-->
+  <a href="*" class="right" id="theme-toggle" aria-label="Toggle light and dark mode">
+  Toggle Theme (beta)
+  </a>
+  <script src="dark-light.js"></script>
+ <!--Theme button end-->
+  
+  <!--Don't touch this-->
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i>Több</i>
+  </a>
+</nav>
 
   <!-- Main content -->
   <main class="content">
@@ -84,6 +85,54 @@
       <hr>
 
     </div>
+
+    <!-- Solar Data Section -->
+
+<h2>Solar Data</h2>
+<div id="solar-data">
+  <!-- Add <p id="elementname"></p> here for each element you want to display -->
+  <p>Source: <span id="source"></span></p>
+  <p>Updated: <span id="updated"></span></p>
+  <p>Solar Flux: <span id="solarflux"></span></p>
+  <p>A-index: <span id="aindex"></span></p>
+  <p>K-index: <span id="kindex"></span></p>
+  <p>X-ray: <span id="xray"></span></p>
+  <p>Sunspots: <span id="sunspots"></span></p>
+  <p>Heliumline: <span id="heliumline"></span></p>
+  <p>Proton Flux: <span id="protonflux"></span></p>
+  <p>Electron Flux: <span id="electronflux"></span></p>
+  <p>Aurora: <span id="aurora"></span></p>
+  <p>Normalization: <span id="normalization"></span></p>
+  <p>Aur Lat: <span id="latdegree"></span></p>
+  <p>Solar Wind: <span id="solarwind"></span></p>
+  <p>Magnetic Field: <span id="magneticfield"></span></p>
+  <p>Geomag Field: <span id="geomagfield"></span></p>
+  <p>Signal noise level: <span id="signalnoise"></span></p>
+  <p>Maximum Usable Frequency: <span id="muf"></span></p>
+  <!-- For band elements with name and time attributes, use id="band_name_time" -->
+  <!-- For elements with name attribute (but no time), use id="tagname_name" -->
+  <!-- Example: <p id="phenomenon_E_skip"></p> -->
+  <p id="band_80m_40m_day"></p>
+  <p id="band_80m_40m_night"></p>
+  <p id="band_30m_20m_day"></p>
+  <p id="band_30m_20m_night"></p>
+  <p id="band_17m_15m_day"></p>
+  <p id="band_17m_15m_night"></p>
+  <p id="band_12m_10m_day"></p>
+  <p id="band_12m_10m_night"></p>
+
+  <!-- Add more as needed for other bands like 6m, 2m, etc. -->
+  <p id="vhf_phenomenon_E_skip"></p>
+  <!-- For VHF phenomena under calculatedvhfconditions -->
+  <!-- IDs: vhf_phenomenon_name_location -->
+  <p id="vhf_phenomenon_vhf_aurora_northern_hemi"></p>
+  <p id="vhf_phenomenon_E_Skip_europe"></p>
+  <p id="vhf_phenomenon_E_Skip_north_america"></p>
+  <p id="vhf_phenomenon_E_Skip_europe_6m"></p>
+  <p id="vhf_phenomenon_E_Skip_europe_4m"></p>
+</div>
+
+<script src="solar.js"></script>
 
   </main>
 

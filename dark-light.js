@@ -42,7 +42,7 @@ function getPreferredTheme() {
     return 'dark';
   }
 
-  return 'light';
+  return 'dark';
 }
 
 // Apply theme as early as possible on load
