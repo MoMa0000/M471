@@ -88,6 +88,20 @@ html {
   color: black;
 }
 
+/*toggle theme button style*/
+button.theme-toggle {
+  float: right;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px 25px;
+  text-decoration: none;
+  background-color: #007F7F;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
 /*Media queries*/
  /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
  @media screen and (max-width: 600px) {
